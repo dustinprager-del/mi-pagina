@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="./imagenes/IMG_20241008_191548.jpg" width="80" alt="Foto perfil">
+    <h1>Hoja de Vida</h1>
+</header>
+
+<nav>
+    <a href="#perfil_profesional">Perfil Profesional</a>
+    <a href="#informacion_personal">Información Personal</a>
+    <a href="#estudios">Estudios</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#experiencia_laboral">Experiencia Laboral</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#horario">Horario</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<main>
+
+<section id="perfil_profesional">
+    <h2>Perfil Profesional</h2>
+    <p>Soy estudiante en formación en desarrollo web con conocimientos en HTML y CSS.</p>
+</section>
+
+<section id="informacion_personal">
+    <h2>Información Personal</h2>
+    <ul>
+        <li>Nombre: Tu Nombre</li>
+        <li>Ciudad: Popayán</li>
+        <li>Email: ejemplo@gmail.com</li>
+    </ul>
+</section>
+
+<section id="estudios">
+    <h2>Estudios</h2>
+    <ul>
+        <li>Técnico en Programación - SENA</li>
+        <li>Bachiller Académico</li>
+    </ul>
+</section>
+
+<section id="cursos">
+    <h2>Cursos</h2>
+    <ul>
+        <li>Curso de HTML</li>
+        <li>Curso de CSS</li>
+    </ul>
+</section>
+
+<section id="experiencia_laboral">
+    <h2>Experiencia Laboral</h2>
+    <p>Sin experiencia laboral actualmente.</p>
+</section>
+
+<section id="horario">
+    <h2>Horario</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Horario</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>07:00-10:00</td>
+                <td>HTML-CSS</td>
+                <td>Base de Datos</td>
+                <td>Inglés</td>
+                <td>HTML-CSS</td>
+                <td>Base de Datos</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="ubicacion">
+    <h2>Ubicación</h2>
+    <iframe
+        src="https://www.google.com/maps?q=2.4448,-76.6147&output=embed"
+        width="400"
+        height="300"
+        style="border:0;"
+        loading="lazy">
+    </iframe>
+</section>
+
+<section id="contacto">
+    <h2>Formulario de Contacto</h2>
+
+    <form>
+        <label>Nombre:</label><br>
+        <input type="text" required><br><br>
+
+        <label>Correo:</label><br>
+        <input type="email" required><br><br>
+
+        <label>Mensaje:</label><br>
+        <textarea rows="4" cols="30"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Curriculum Vitae</p>
+</footer>
+
+<h3>Habilidades</h3>
+HTML <progress value="80" max="100"></progress><br>
+CSS <progress value="60" max="100"></progress>
+
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+frameborder="0" 
+allowfullscreen>
+</iframe>
+
+<section>
+    <h2>Redes Sociales</h2>
+    <a href="https://github.com/">GitHub</a><br>
+    <a href="https://linkedin.com/">LinkedIn</a><br>
+    <a href="https://instagram.com/">Instagram</a>
+</section>
+
+<a href="cv.pdf" download>Descargar CV en PDF</a>
+
+<audio id="trolleo">
+    <source src="./audio/audio.mp3" type="audio/mpeg">
+</audio>
+
+<style>
+h1 {
+    color: rgb(51, 255, 0);
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+    from { transform: translateX(0px); }
+    to { transform: translateX(50px); }
+}
+</style>
+
+<style>
+
+img {
+    border-radius: 15px;
+    animation: entrada 1.5s ease-out, flotar 3s ease-in-out infinite alternate;
+    transition: 0.4s;
+}
+
+img:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 30px #00ffcc;
+}
+
+@keyframes entrada {
+    from {
+        opacity: 0;
+        transform: scale(0.5) rotate(-20deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes flotar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+
+</style>
+
+<script>
+document.addEventListener("mousemove", function() {
+    const audio = document.getElementById("trolleo");
+    audio.play();
+}, { once: true });
+
+
+document.addEventListener("click", function() {
+    const audio = document.getElementById("trolleo");
+    audio.volume = 1;
+    audio.play();
+}, { once: true });
+</script>
+
+</body>
+</html>
